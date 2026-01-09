@@ -32,7 +32,7 @@ export default async function handler(req, res) {
         { role: "system", content: finalSystem },
         { role: "user", content: message }
       ],
-      max_tokens: 150, // Keep it short for Roblox chat bubbles
+      max_tokens: 1000, // Keep it short for Roblox chat bubbles
     });
 
     const reply = completion.choices[0].message.content;
